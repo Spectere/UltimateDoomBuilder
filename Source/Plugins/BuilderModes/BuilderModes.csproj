@@ -41,7 +41,7 @@
     <EmbeddedResource Include="Resources\SectorsMode.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Builder.csproj" />
+    <ProjectReference Include="..\..\Core\Builder.csproj" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\NewSector2.png" />

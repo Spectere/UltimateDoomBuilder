@@ -28,7 +28,7 @@
     <EmbeddedResource Include="Resources\Actions.cfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Builder.csproj" />
+    <ProjectReference Include="..\..\Core\Builder.csproj" PrivateAssets="All" />
     <ProjectReference Include="..\BuilderModes\BuilderModes.csproj" />
   </ItemGroup>
 </Project>

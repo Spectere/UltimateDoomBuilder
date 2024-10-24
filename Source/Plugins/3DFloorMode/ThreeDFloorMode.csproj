@@ -58,7 +58,7 @@
     <EmbeddedResource Include="Resources\FloorAndCeiling.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Builder.csproj" />
+    <ProjectReference Include="..\..\Core\Builder.csproj" PrivateAssets="All" />
     <ProjectReference Include="..\BuilderEffects\BuilderEffects.csproj" />
     <ProjectReference Include="..\BuilderModes\BuilderModes.csproj" />
   </ItemGroup>

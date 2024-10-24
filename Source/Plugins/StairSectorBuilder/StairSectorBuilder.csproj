@@ -16,6 +16,6 @@
     <EmbeddedResource Include="Resources\StairIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Builder.csproj" />
+    <ProjectReference Include="..\..\Core\Builder.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>

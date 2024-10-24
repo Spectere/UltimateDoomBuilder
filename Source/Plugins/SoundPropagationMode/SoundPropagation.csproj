@@ -31,7 +31,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Builder.csproj" />
+    <ProjectReference Include="..\..\Core\Builder.csproj" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Actions.cfg" />
