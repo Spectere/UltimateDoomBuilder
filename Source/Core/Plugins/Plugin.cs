@@ -73,9 +73,8 @@ namespace CodeImp.DoomBuilder.Plugins
 				// Load assembly
 				asm = Assembly.LoadFrom(filename);
 			}
-			catch(Exception e)
+			catch(Exception)
 			{
-				General.ErrorLogger.Add(ErrorType.Error, "Could not load plugin \"" + shortfilename + "\", the DLL file could not be read. This file is not supposed to be in the Plugins subdirectory." + Environment.NewLine + Environment.NewLine + "Exception details: " + Environment.NewLine + e.ToString());
 				throw new InvalidProgramException();
 			}
 			
@@ -128,7 +127,6 @@ namespace CodeImp.DoomBuilder.Plugins
 			else
 			{
 				// How can we plug something in without a plug?
-				General.ErrorLogger.Add(ErrorType.Error, "Could not load plugin \"" + shortfilename + "\", plugin is missing the Plug class. This file is not supposed to be in the Plugins subdirectory.");
 				throw new InvalidProgramException();
 			}
 			

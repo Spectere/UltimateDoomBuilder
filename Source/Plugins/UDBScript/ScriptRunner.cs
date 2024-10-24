@@ -32,10 +32,10 @@ using System.Windows.Forms;
 using CodeImp.DoomBuilder.Map;
 using CodeImp.DoomBuilder.Windows;
 using CodeImp.DoomBuilder.UDBScript.Wrapper;
+using Esprima;
 using Jint;
 using Jint.Runtime;
 using Jint.Runtime.Interop;
-using Acornima;
 using Jint.Native;
 
 #endregion
