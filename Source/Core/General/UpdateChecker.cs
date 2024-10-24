@@ -10,7 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using SharpCompress.Archives.SevenZip;
-//using SharpCompress.Common;
+using SharpCompress.Common;
 using SharpCompress.Readers;
 
 #endregion

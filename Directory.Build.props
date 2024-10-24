@@ -1,0 +1,9 @@
+<Project>
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<PropertyGroup Condition="$(MSBuildProjectName) == 'Builder' Or $(MSBuildProjectName) == 'BuilderNative'">
+		<OutDir>$(MSBuildThisFileDirectory)Build</OutDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="$(MSBuildProjectName) != 'Builder'">
+		<OutDir>$(MSBuildThisFileDirectory)Build/Plugins</OutDir>
+	</PropertyGroup>
+</Project>

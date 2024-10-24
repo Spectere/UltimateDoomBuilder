@@ -27,6 +27,7 @@ using CodeImp.DoomBuilder.Data;
 using System.IO;
 using CodeImp.DoomBuilder.Rendering;
 using Action = CodeImp.DoomBuilder.Actions.Action;
+using System.Diagnostics;
 
 #endregion
 

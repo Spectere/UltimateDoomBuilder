@@ -102,11 +102,7 @@ namespace CodeImp.DoomBuilder.Controls
 			this.infoicons = new System.Windows.Forms.ImageList(this.components);
 			this.scriptsplitter = new CodeImp.DoomBuilder.Controls.CollapsibleSplitContainer();
 			this.tabs = new CodeImp.DoomBuilder.Controls.VSTabControl();
-#if !MONO_WINFORMS
-			this.infotabs = new Dotnetrix.Controls.TabControlEX();
-#else
 			this.infotabs = new System.Windows.Forms.TabControl();
-#endif
 			this.taberrors = new System.Windows.Forms.TabPage();
 			this.errorlist = new System.Windows.Forms.ListView();
 			this.colIndex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -882,23 +878,6 @@ namespace CodeImp.DoomBuilder.Controls
 			// 
 			// infotabs
 			// 
-#if !MONO_WINFORMS
-			this.infotabs.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-			this.infotabs.Appearance = Dotnetrix.Controls.TabAppearanceEX.FlatTab;
-			this.infotabs.Controls.Add(this.taberrors);
-			this.infotabs.Controls.Add(this.tabsearchresults);
-			this.infotabs.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.infotabs.FlatBorderColor = System.Drawing.SystemColors.ControlDark;
-			this.infotabs.ImageList = this.infoicons;
-			this.infotabs.ItemSize = new System.Drawing.Size(74, 19);
-			this.infotabs.Location = new System.Drawing.Point(0, 0);
-			this.infotabs.Name = "infotabs";
-			this.infotabs.SelectedIndex = 1;
-			this.infotabs.SelectedTabColor = System.Drawing.SystemColors.ControlLightLight;
-			this.infotabs.Size = new System.Drawing.Size(928, 187);
-			this.infotabs.TabIndex = 0;
-			this.infotabs.UseVisualStyles = false;
-#else
             this.infotabs.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.infotabs.Controls.Add(this.taberrors);
             this.infotabs.Controls.Add(this.tabsearchresults);
@@ -910,7 +889,6 @@ namespace CodeImp.DoomBuilder.Controls
             this.infotabs.SelectedIndex = 1;
             this.infotabs.Size = new System.Drawing.Size(928, 187);
             this.infotabs.TabIndex = 0;
-#endif
 			// 
 			// taberrors
 			// 
@@ -1075,11 +1053,7 @@ namespace CodeImp.DoomBuilder.Controls
 		private System.Windows.Forms.ImageList infoicons;
         private CollapsibleSplitContainer scriptsplitter;
         private VSTabControl tabs;
-#if !MONO_WINFORMS
-        private Dotnetrix.Controls.TabControlEX infotabs;
-#else
         private System.Windows.Forms.TabControl infotabs;
-#endif
         private System.Windows.Forms.TabPage taberrors;
         private System.Windows.Forms.ListView errorlist;
         private System.Windows.Forms.ColumnHeader colIndex;

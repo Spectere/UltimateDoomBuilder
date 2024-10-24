@@ -32,7 +32,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using CodeImp.DoomBuilder.IO;
-using Esprima;
+using Acornima;
 
 #endregion
 

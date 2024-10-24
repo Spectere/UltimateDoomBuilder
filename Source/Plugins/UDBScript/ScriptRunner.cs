@@ -35,7 +35,7 @@ using CodeImp.DoomBuilder.UDBScript.Wrapper;
 using Jint;
 using Jint.Runtime;
 using Jint.Runtime.Interop;
-using Esprima;
+using Acornima;
 using Jint.Native;
 
 #endregion

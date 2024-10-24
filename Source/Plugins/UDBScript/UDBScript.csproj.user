@@ -4,4 +4,21 @@
     <ReferencePath>
     </ReferencePath>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Windows\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Windows\PreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Windows\QueryOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Windows\ScriptRunnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Windows\UDBScriptErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

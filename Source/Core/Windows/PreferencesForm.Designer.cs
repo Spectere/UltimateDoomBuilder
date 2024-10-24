@@ -1494,6 +1494,7 @@ namespace CodeImp.DoomBuilder.Windows
 			this.actionkey.TabIndex = 5;
 			this.actionkey.TabStop = false;
 			this.actionkey.KeyDown += new System.Windows.Forms.KeyEventHandler(this.actionkey_KeyDown);
+			this.actionkey.ShortcutsEnabled = false;
 			// 
 			// tabcolors
 			// 
